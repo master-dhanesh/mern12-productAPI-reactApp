@@ -10,6 +10,7 @@ const Home = () => {
     const { search } = useLocation();
     const category = decodeURIComponent(search.split("=")[1]);
     const [filteredProducts, setfilteredProducts] = useState(null);
+
     const getproductscategory = async () => {
         try {
             const { data } = await axios.get(`/products/category/${category}`);
