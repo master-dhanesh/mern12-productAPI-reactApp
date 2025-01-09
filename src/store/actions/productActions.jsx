@@ -1,4 +1,4 @@
-export { adddata } from "../reducers/productSlice";
+export { adddata, editdata, deletedata } from "../reducers/productSlice";
 import axios from "../../utils/axios";
 import { setdata } from "../reducers/productSlice";
 
